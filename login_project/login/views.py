@@ -106,19 +106,3 @@ def file_vuln(request):
 
 		
 		return render(request,'fileupload.html')
-
-
-
-
-
-
-
-
-
-
-
-	
-			
-	
-
-
