@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form method="get">
+    <label for="query">Search: </label>
+    <input type="text" id="query" name="query" />
+    <input type="submit" value="Search" />
+</form>
+
+<span id="search-query" ></span>
+
+<!-- The results of the search query -->
+
+<script type="application/javascript">
+    var searchParams = new URLSearchParams(document.location.search);
+    if (searchParams.has("query"))
+    {
+        document.getElementById("search-query").innerHTML = "You searched for " + searchParams.get("query")
+    }
+</script>
+</body>
+</html>

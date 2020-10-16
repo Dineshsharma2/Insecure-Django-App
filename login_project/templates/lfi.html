@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>LFI</h2>
+
+<form method="POST" action="{% url 'lfivuln' %}">
+  <label for="fname">Enter the file path to include</label><br>
+  <input type="text" id="lfi" name="lfi" value=""><br>
+  <input type="submit" value="Submit">
+</form> 
+{{ users }}
+</body>
+</html>
+
